@@ -4,7 +4,7 @@ export const AboutSection = () => {
   const features = [
     {
       icon: Code,
-      title: "48-Hour Challenge",
+      title: "36-Hour Challenge",
       description: "Intensive coding marathon to bring your ideas to life"
     },
     {
@@ -32,9 +32,8 @@ export const AboutSection = () => {
             About Samartha 2025
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Samartha 2025 is more than just a hackathon – it's a platform where innovation meets opportunity. 
-            Join hundreds of talented developers, designers, and entrepreneurs in a 48-hour journey of creation, 
-            collaboration, and technological breakthrough.
+            To foster innovation and collaboration among students across the country by solving real-world problems through technology. 
+            The hackathon will provide a platform for students to showcase their technical skills, creativity, innovation, and teamwork.
           </p>
         </div>
 

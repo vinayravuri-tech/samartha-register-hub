@@ -3,51 +3,36 @@ import { Trophy, Medal, Award, Gift } from "lucide-react";
 export const PrizesSection = () => {
   const prizes = [
     {
-      position: "1st Prize",
-      amount: "₹50,000",
+      position: "Winner",
+      amount: "₹1,50,000",
       icon: Trophy,
       color: "text-yellow-400",
       bgColor: "bg-yellow-400/20",
-      extras: ["Mentorship Program", "Incubation Support", "Industry Connect"]
+      extras: ["Trophy + Certificate"]
     },
     {
-      position: "2nd Prize", 
-      amount: "₹30,000",
+      position: "1st Runner-Up", 
+      amount: "₹1,25,000",
       icon: Medal,
       color: "text-gray-300",
       bgColor: "bg-gray-300/20",
-      extras: ["Mentorship Program", "Industry Connect", "Certificate"]
+      extras: ["Trophy + Certificate"]
     },
     {
-      position: "3rd Prize",
-      amount: "₹20,000", 
+      position: "2nd Runner-Up",
+      amount: "₹1,00,000", 
       icon: Award,
       color: "text-orange",
       bgColor: "bg-orange/20",
-      extras: ["Mentorship Program", "Certificate", "Goodies"]
+      extras: ["Trophy + Certificate"]
     }
   ];
 
   const specialPrizes = [
     {
-      title: "Best Innovation",
-      amount: "₹15,000",
-      description: "Most creative and impactful solution"
-    },
-    {
-      title: "People's Choice",
-      amount: "₹10,000", 
-      description: "Voted by participants and audience"
-    },
-    {
-      title: "Best UI/UX",
-      amount: "₹10,000",
-      description: "Outstanding user experience design"
-    },
-    {
-      title: "Best Use of AI",
-      amount: "₹10,000",
-      description: "Excellence in artificial intelligence implementation"
+      title: "Consolation Prizes",
+      amount: "₹15,000 for 7 Teams",
+      description: "Recognition for outstanding efforts"
     }
   ];
 
@@ -89,22 +74,15 @@ export const PrizesSection = () => {
           ))}
         </div>
 
-        {/* Special Prizes */}
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Special Category Awards</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {specialPrizes.map((prize, index) => (
-              <div 
-                key={index}
-                className="text-center p-6 rounded-xl bg-card hover:bg-card/80 transition-all duration-300 hover:scale-105"
-              >
-                <Gift className="w-8 h-8 text-accent mx-auto mb-4" />
-                <h4 className="font-bold text-lg mb-2 text-foreground">{prize.title}</h4>
-                <p className="text-xl font-bold text-accent mb-3">{prize.amount}</p>
-                <p className="text-sm text-muted-foreground">{prize.description}</p>
-              </div>
-            ))}
+        {/* Total Prize Pool */}
+        <div className="text-center mb-16">
+          <div className="bg-card p-8 rounded-xl inline-block shadow-lg">
+            <h3 className="text-xl font-bold text-secondary mb-2">Consolation Prizes</h3>
+            <p className="text-2xl font-bold text-foreground">₹15,000 for 7 Teams</p>
           </div>
+          <p className="mt-8 text-3xl font-bold text-foreground">
+            Total Prize Pool: <span className="text-primary">₹4,80,000</span>
+          </p>
         </div>
 
         {/* Additional Benefits */}

@@ -3,44 +3,28 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export const FAQSection = () => {
   const faqs = [
     {
-      question: "Who can participate in Samartha 2025?",
-      answer: "Samartha 2025 is open to all undergraduate and graduate students, recent graduates (within 2 years), and young professionals. Teams can be formed with 3-5 members from the same or different institutions."
+      question: "How do I register for the event?",
+      answer: "To register, fill out the registration form by clicking the 'Register Now' button. After submission, you'll receive a confirmation and instructions for the Low-Level Design submission. Pay the registration fee only upon selection for the final round."
     },
     {
       question: "What is the registration fee?",
-      answer: "Registration for Samartha 2025 is completely FREE! We believe in making innovation accessible to everyone. All participants will receive free access to development resources, mentorship, meals, and event materials."
+      answer: "The fee is Rs 200 per team member without accommodation, and Rs 300 per team member with accommodation."
     },
     {
-      question: "Do I need to have a team before registering?",
-      answer: "No! You can register individually or with a partial team. We have dedicated team formation sessions on Day 1 where you can meet other participants and form your team. Teams must have 3-5 members."
+      question: "Can I participate individually?",
+      answer: "No, participation is team-based. Teams must consist of 3 to 5 members."
     },
     {
-      question: "What should I bring to the hackathon?",
-      answer: "Bring your laptop, chargers, any hardware you might need, and your enthusiasm! We'll provide WiFi, workspace, meals, and all basic amenities. Don't forget to bring a valid student/professional ID for verification."
+      question: "What equipment should we bring?",
+      answer: "All participants must bring their own laptops. If your project involves building miniature prototypes, you must also bring all necessary equipment and components."
     },
     {
-      question: "Are there any restrictions on technology or platforms?",
-      answer: "No restrictions! You're free to use any programming languages, frameworks, APIs, or platforms. We encourage the use of cutting-edge technologies and provide access to premium development tools and cloud credits."
+      question: "Is remote participation allowed?",
+      answer: "No, Samartha 2025 is a mandatory onsite hackathon. All team members must be present at the venue for the entire duration."
     },
     {
-      question: "How will projects be judged?",
-      answer: "Projects will be evaluated based on: Innovation & Creativity (30%), Technical Implementation (25%), Impact & Feasibility (25%), Presentation & Demo (20%). Our judging panel includes industry experts, entrepreneurs, and academic leaders."
-    },
-    {
-      question: "Can we work on existing projects?",
-      answer: "No, all projects must be started from scratch during the hackathon. However, you can use existing open-source libraries, APIs, and frameworks. Any pre-existing code must be clearly documented and approved by organizers."
-    },
-    {
-      question: "Is accommodation provided?",
-      answer: "The hackathon venue will be available 24/7 with rest areas and basic amenities. For outstation participants, we can help coordinate accommodation arrangements with nearby hotels and hostels at special rates."
-    },
-    {
-      question: "What happens to the intellectual property of our projects?",
-      answer: "You retain full ownership of your intellectual property. However, by participating, you grant organizers the right to showcase your project for promotional purposes. We encourage open-source contributions but it's not mandatory."
-    },
-    {
-      question: "How do I prepare for the hackathon?",
-      answer: "Review the themes, brush up on your coding skills, think about problems you'd like to solve, and come with an open mind. We'll provide pre-event resources and workshops to help you prepare. Most importantly, bring your creativity and enthusiasm!"
+      question: "When will the problem statements be revealed?",
+      answer: "The problem statements for the final phase will be revealed during the event itself."
     }
   ];
 

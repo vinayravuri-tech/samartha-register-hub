@@ -4,12 +4,13 @@ import { HeroSection } from "@/components/HeroSection";
 import { OrganizersSection } from "@/components/OrganizersSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ThemesSection } from "@/components/ThemesSection";
-import { ScheduleSection } from "@/components/ScheduleSection";
+import { NewScheduleSection } from "@/components/NewScheduleSection";
 import { PrizesSection } from "@/components/PrizesSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { RegistrationSection } from "@/components/RegistrationSection";
 import { Footer } from "@/components/Footer";
+import { ContactSection } from "@/components/ContactSection";
 import { RegistrationModal } from "@/components/RegistrationModal";
 
 const Index = () => {
@@ -23,11 +24,12 @@ const Index = () => {
         <OrganizersSection />
         <AboutSection />
         <ThemesSection />
-        <ScheduleSection />
+        <NewScheduleSection />
         <PrizesSection />
         <BenefitsSection />
         <RegistrationSection onRegisterClick={() => setIsRegistrationOpen(true)} />
         <FAQSection />
+        <ContactSection />
       </main>
       <Footer />
       <RegistrationModal 
