@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { OrganizersSection } from "@/components/OrganizersSection";
+import { AboutSection } from "@/components/AboutSection";
+import { ThemesSection } from "@/components/ThemesSection";
+import { ScheduleSection } from "@/components/ScheduleSection";
+import { PrizesSection } from "@/components/PrizesSection";
+import { BenefitsSection } from "@/components/BenefitsSection";
+import { FAQSection } from "@/components/FAQSection";
+import { RegistrationSection } from "@/components/RegistrationSection";
+import { Footer } from "@/components/Footer";
+import { RegistrationModal } from "@/components/RegistrationModal";
 
 const Index = () => {
+  const [isRegistrationOpen, setIsRegistrationOpen] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header onRegisterClick={() => setIsRegistrationOpen(true)} />
+      <main>
+        <HeroSection onRegisterClick={() => setIsRegistrationOpen(true)} />
+        <OrganizersSection />
+        <AboutSection />
+        <ThemesSection />
+        <ScheduleSection />
+        <PrizesSection />
+        <BenefitsSection />
+        <RegistrationSection onRegisterClick={() => setIsRegistrationOpen(true)} />
+        <FAQSection />
+      </main>
+      <Footer />
+      <RegistrationModal 
+        isOpen={isRegistrationOpen} 
+        onClose={() => setIsRegistrationOpen(false)} 
+      />
     </div>
   );
 };
